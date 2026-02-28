@@ -1,2 +1,8 @@
-# Mini-Shell-UNIX-simplifi-
-Mini-shell UNIX en C (projet personnel) Implémentation d’un interpréteur de commandes supportant l’exécution de programmes, la création de processus (fork/exec) et leur synchronisation (wait).
+## Architecture
+
+Le projet est structuré en deux modules principaux :
+
+- **parser** : analyse la ligne de commande saisie par l’utilisateur et la transforme
+  en une structure exploitable (commande, arguments).
+- **executor** : exécute les commandes parsées en créant et en synchronisant
+  les processus via les appels système UNIX (`fork`, `exec`, `wait`).
